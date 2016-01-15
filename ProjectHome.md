@@ -1,0 +1,6 @@
+I've created a PayPal IPN (Instant Payment Notification) plugin that includes a handy helper that will build your paypal buttons for you (Checkout, Add to Cart, Subscribe, and Donate). The Paypal IPN Plugin logs, and records any transaction made through your application and is completely customizable via its config and on the fly options. The Plugin is also very simple to switch to between sandbox/live paypal.
+
+
+The biggest benefit to using the PayPal IPN plugin is that it doesn't require a Website Payment Pro account (monthly charge) to use like the other PayPal implementations in cakePHP. Paypal IPN service is free from paypal, you simply have to enable it. Whenever paypal receives a transaction your app will be notified.
+
+This plugin will process Instant Payment Notifications sent back from paypal to record all the transaction details in your database and provide a way to use post transaction logic within your application (afterPaypalNotification callback). This plugin also features a Paypal Helper to create various buttons to use with your paypal IPN service. I hope you find it useful.
